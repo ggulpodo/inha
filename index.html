@@ -14,13 +14,11 @@
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     <script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
     <script src="js/swiper/swiper.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- // Script -->
 
     <!-- Style -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- // Style -->
 
@@ -1358,15 +1356,10 @@
                             <div class="coop-news-top">
                                 <h2 class="coop-news-tit">산학협력단 소식</h2>
                             </div>
-                            <!-- 슬릭 컨트롤 -->
-                            <div class="coop-news-slide-control">
-                                <button class="coop-news-slide-prev"></button>
-                                <button class="coop-news-slide-next"></button>
-                            </div>
-                            <div class="coop-news-main">
+                            <div class="swiper-container coop-news-main">
                                 <!-- 슬릭 슬라이드 -->
-                                <div class="coop-news-slide">
-                                    <div class="coop-news-slide-div">
+                                <div class="swiper-wrapper coop-news-slide">
+                                    <div class="swiper-slide coop-news-slide-div">
                                         <a href="#">
                                             <img src="images/coop_n_1.jpg">
                                             <p class="coop-news-slide-txt">
@@ -1378,7 +1371,7 @@
                                             </p>
                                         </a>
                                     </div>
-                                    <div class="coop-news-slide-div">
+                                    <div class="swiper-slide coop-news-slide-div">
                                         <a href="#">
                                             <img src="images/coop_n_2.jpg">
                                             <p class="coop-news-slide-txt">
@@ -1390,7 +1383,7 @@
                                             </p>
                                         </a>
                                     </div>
-                                    <div class="coop-news-slide-div">
+                                    <div class="swiper-slide coop-news-slide-div">
                                         <a href="#">
                                             <img src="images/coop_n_3.jpg">
                                             <p class="coop-news-slide-txt">
@@ -1401,7 +1394,7 @@
                                             </p>
                                         </a>
                                     </div>
-                                    <div class="coop-news-slide-div">
+                                    <div class="swiper-slide coop-news-slide-div">
                                         <a href="#">
                                             <img src="images/coop_n_4.jpg">
                                             <p class="coop-news-slide-txt">
@@ -1412,7 +1405,7 @@
                                             </p>
                                         </a>
                                     </div>
-                                    <div class="coop-news-slide-div">
+                                    <div class="swiper-slide coop-news-slide-div">
                                         <a href="#">
                                             <img src="images/coop_n_5.jpg">
                                             <p class="coop-news-slide-txt">
@@ -1425,6 +1418,11 @@
                                         </a>
                                     </div>
                                 </div>
+                            </div>
+                            <!-- 슬릭 컨트롤 -->
+                            <div class="coop-news-slide-control">
+                                <button class="coop-news-slide-prev"></button>
+                                <button class="coop-news-slide-next"></button>
                             </div>
                         </div>
                     </div>

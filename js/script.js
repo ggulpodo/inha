@@ -371,12 +371,14 @@ $(document).ready(function () {
     });
 
     // Coop news Slide
-    $('.coop-news-slide').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: false,
-        prevArrow: '.coop-news-slide-prev',
-        nextArrow: '.coop-news-slide-next',
+    let sw_coop = new Swiper('.coop-news-main', {
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+            prevEl: '.coop-news-slide-prev',
+            nextEl: '.coop-news-slide-next',
+        },
+        allowTouchMove: false,
     });
 
     // SNS Slide
